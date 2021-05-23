@@ -1,7 +1,7 @@
 import time
-from django.db import connections
-from django.db.utils import OperationalError
-from django.core.management.base import BaseCommand
+from django.db import connections #irá testar se a conexão está dispónivel.
+from django.db.utils import OperationalError #quando o db não está dispónivel
+from django.core.management.base import BaseCommand #serve para podemos criar novo custom command.
 
 
 class Command(BaseCommand):
